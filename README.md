@@ -10,7 +10,7 @@ That intuition necessarily breaks down from an information theory perspective in
 
 ## Installation
 
-Zig has a package manager!!! Do something like the following. (not yet, need to update to the correct hash, give me 10min).
+Zig has a package manager!!! Do something like the following.
 
 ```zig
 // build.zig.zon
@@ -21,8 +21,8 @@ Zig has a package manager!!! Do something like the following. (not yet, need to 
     .dependencies = .{
         .sumsparsemat = .{
             .name = "sumsparsemat",
-	    .url = "https://github.com/hmusgrave/sumsparsemat/archive/refs/tags/0.0.0.tar.gz",
-	    .hash = "1220f99b7ca5784b2101996e03a5b9be8ddbe553df5354610e2e42f1f15d7a8bcad6",
+	    .url = "https://github.com/hmusgrave/sumsparsemat/archive/refs/tags/0.0.2.tar.gz",
+	    .hash = "122084d226355dbddc9ca33fa6429eb9bf4c2738982fbe7f34fccb59e3c6fd22ff8c",
         },
     },
 }
