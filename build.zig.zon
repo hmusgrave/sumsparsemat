@@ -1,0 +1,11 @@
+.{
+    .name = "sumsparsemat",
+    .version = "0.0.0",
+
+    .dependencies = .{
+        .sparsemat = .{
+	   .url = "https://github.com/hmusgrave/sparsemat/archive/refs/tags/0.0.1.tar.gz",
+            .hash = "1220f41fec4b4a772cb8af612d6a66a8d315240b2c2d9ab6a4eff5e4af88f2e258d0",
+        },
+    },
+}
