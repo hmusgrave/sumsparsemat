@@ -15,16 +15,19 @@ pub fn build(b: *std.Build) void {
     // set a preferred release mode, allowing the user to decide how to optimize.
     const optimize = b.standardOptimizeOption(.{});
 
-    const module = b.addModule("sumsparsemat", .{
-        .source_file = .{ .path = "src/main.zig" },
-    });
-    _ = module;
-
     const sparsemat_pkg = b.dependency("sparsemat", .{
         .target = target,
         .optimize = optimize,
     });
     const sparsemat_mod = sparsemat_pkg.module("sparsemat");
+
+    const module = b.addModule("sumsparsemat", .{
+        .source_file = .{ .path = "src/main.zig" },
+        .dependencies = &.{
+            .{ .name = "sparsemat", .module = sparsemat_mod },
+        },
+    });
+    _ = module;
 
     const lib = b.addStaticLibrary(.{
         .name = "sumsparsemat",
