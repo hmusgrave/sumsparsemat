@@ -21,8 +21,8 @@ Zig has a package manager!!! Do something like the following.
     .dependencies = .{
         .sumsparsemat = .{
             .name = "sumsparsemat",
-	    .url = "https://github.com/hmusgrave/sumsparsemat/archive/refs/tags/0.0.2.tar.gz",
-	    .hash = "122084d226355dbddc9ca33fa6429eb9bf4c2738982fbe7f34fccb59e3c6fd22ff8c",
+	    .url = "https://github.com/hmusgrave/sumsparsemat/archive/refs/tags/0.0.3.tar.gz",
+	    .hash = "12201177bfd6e47df5418a3aacdb5204593a19e78a0d99cf40c2d4bffde35c99b0af",
         },
     },
 }
