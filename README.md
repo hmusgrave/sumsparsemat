@@ -41,4 +41,4 @@ unit_tests.addModule("sumsparsemat", sumsparsemat_mod);
 
 ## Status
 
-The code might work or might not. It probably compiles. I plan to work on many more tests and benchmarks for this and the underling sparsemat implementation shortly. I'll update the README (and if necessary the code) within a week of finishing (i.e., this August 2023).
+The code might work or might not. It probably compiles. I plan to work on many more tests and benchmarks for this and the underlying sparsemat implementation shortly. I'll update the README (and if necessary the code) within a week of finishing (i.e., this August 2023).
